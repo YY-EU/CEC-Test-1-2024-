@@ -110,3 +110,27 @@ showStudent = display_student
 #Call using new name.
 showStudent("Emma",26)
 
+#Q6 If,else, elif statements (Week 4)
+#A Grading Programme
+#Learn to Programme Python Textbook pg 106.
+
+#Convert a number score to a letter grade.
+def letterGrade(score):
+    if score >= 90:
+        letter='A'
+    elif score >= 80:
+        letter= 'B'
+    elif score >= 70:
+        letter= 'C'
+    elif score >= 60:
+        letter= 'D'
+    else:
+        letter= 'F' #Fail through or default case
+    return letter
+
+grade1 = letterGrade(75)
+print(grade1)
+grade2 = letterGrade(82)
+print(grade2)
+grade3 = letterGrade(95)
+print(grade3)
