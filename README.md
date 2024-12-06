@@ -79,3 +79,17 @@ if isSquare(userLength, userWidth):
     print(userLength, 'and', userWidth, 'represent a square.')
 else:
     print(userLength, 'and', userWidth, 'does not represent a square.')
+
+#Q4 Python Fucntions(Week 5)
+#Exercise 6 PYNative
+#Create a recursive function.
+
+def addition(num):
+    if num:
+        #call same function by reducing number by 1.
+        return num + addition(num-1)
+    else:
+        return 0
+
+res = addition(10)
+print(res)
