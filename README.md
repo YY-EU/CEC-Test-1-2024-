@@ -134,3 +134,23 @@ grade2 = letterGrade(82)
 print(grade2)
 grade3 = letterGrade(95)
 print(grade3)
+
+#Q6 Ossia
+
+#Convert a number score to a letter grade.
+def letterGrade(score):
+    if score >=90:
+        letter='A'
+    elif score >=80:
+        letter= 'B'
+    elif score >=70:
+        letter= 'C'
+    elif score >=60:
+        letter= 'D'
+    else:
+        letter= 'F' #Fail through or default case
+    return letter
+
+score= int(input('Enter a score: '))
+grade= letterGrade(score)
+print(grade)
