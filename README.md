@@ -154,3 +154,27 @@ def letterGrade(score):
 score= int(input('Enter a score: '))
 grade= letterGrade(score)
 print(grade)
+
+#Q7 If,else, elif statements (Week 4)
+#isEven function 
+#Learn to Programme Python Textbook pg 113-114.
+
+#Determine if a given integer is even or odd.
+
+#Function to determine if the integer is even or odd.
+def isEven(value):
+    remainder = value%2
+    if remainder ==0:
+        return True
+    else:
+        return False
+
+def EvenOrOdd(value):
+    if isEven(value):
+        print(value, 'is even.')
+    else:
+        print(value, 'is odd.')
+
+userNumber = int(input('Enter a integer: '))
+print(EvenOrOdd(userNumber))
+                 
