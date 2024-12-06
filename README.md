@@ -93,3 +93,20 @@ def addition(num):
 
 res = addition(10)
 print(res)
+
+#Q5 Python Functions(Week 5)
+#Exercise 7 PYNative
+#Assign a different name to function and call it through new name.
+
+def display_student(name,age):
+    print(name,age)
+
+#Call using original name.
+display_student("Emma", 26)
+
+#Assign new name
+showStudent = display_student
+
+#Call using new name.
+showStudent("Emma",26)
+
