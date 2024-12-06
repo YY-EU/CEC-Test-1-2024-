@@ -41,3 +41,41 @@ for num in range(start, end + 1):
                 break
         else:
             print(num)
+
+#Q3 : If,else and elif statements (Week 4)
+#isSquare Function
+#Learn to Programme Python Textbook pg 110-111.
+
+#Determine if two numbers represent a square.
+#Function to determine if length and width represent a square.
+
+def isSquare(length,width):
+
+    if length == width:
+        itsASquare = True
+    else:
+        itsASquare = False
+    return itsASquare
+
+#Test cases
+result = isSquare(5,5)
+if result:
+    print('5 and 5 represent a square')
+else:
+    print('5 and 5 does not represent a square')
+
+result = isSquare(9.5,10.5)
+if result:
+    print('9.5 and 10.5 represent a square')
+else:
+    print('9.5 and 10.5 does not represent a square')
+
+#Get user input, convert to floats and call the function.
+userLength = input('Enter a length: ')
+userLength = float(userLength)
+userWidth = input('Enter a width: ')
+userWidth = float(userWidth)
+if isSquare(userLength, userWidth):
+    print(userLength, 'and', userWidth, 'represent a square.')
+else:
+    print(userLength, 'and', userWidth, 'does not represent a square.')
